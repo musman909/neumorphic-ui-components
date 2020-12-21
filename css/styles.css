@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #F1F3F9;
+  min-width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 600px;
+  padding: 10px;
+}
+
+#tabs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+  margin-bottom: 50px;
+  border: none;
+  border-radius: 10px;
+  box-shadow:
+    -10px -10px 15px rgba(255, 255, 255, 0.8),
+    10px 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.tab {
+  width: 125px;
+  height: 125px;
+  text-align: center;
+  padding: 15px;
+  border: none;
+  border-radius: 6px;
+}
+
+.tab:hover {
+  box-shadow:
+    -6px -6px 12px rgba(255, 255, 255, 0.8),
+    6px 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.tab div {
+  background: var(--color);
+  width: 65px;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  border: none;
+  border-radius: 50%;
+}
+
+
+.tab div i {
+  display: block;
+  color: #fff;
+  font-size: 20px;
+}
+
+.tab:nth-child(1):hover div {
+  box-shadow: 0 2px 10px rgba(251, 112, 112, 0.5);
+}
+
+.tab:nth-child(2):hover div {
+  box-shadow: 0 2px 10px rgba(251, 170, 112, 0.5);
+}
+
+.tab:nth-child(3):hover div {
+  box-shadow: 0 2px 10px rgba(127, 122, 253, 0.5);
+}
+
+
+.tab h2 {
+  font-size: 11px;
+  word-spacing: 1px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+.msg {
+  background: #E5E8F2;
+  padding: 20px;
+  margin-bottom: 30px;
+  border: none;
+  border-radius: 6px;
+  box-shadow: inset -5px -5px 10px rgba(255, 255, 255, 0.8),
+    inset 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.msg p {
+  width: 60%;
+  color: #000;
+  font-size: 14px;
+  font-weight: 500;
+  margin: auto;
+}
+
+.msg p a {
+  color: #4263E1;
+  cursor: pointer;
+}
+
+.btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btns .btn {
+  font-size: 14px;
+  padding: 15px 75px;
+  margin: 20px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  box-shadow:
+    -5px -5px 15px rgba(255, 255, 255, 0.8),
+    5px 5px 15px rgba(0, 0, 0, 0.1);
+  text-transform: capitalize;
+  transition: transform 0.2s ease;
+}
+
+.btn:nth-child(1) {
+  background: #7A90FD;
+  color: #fff;
+}
+
+.btn:nth-child(2) {
+  background: #F1F3F9;
+  color: #7A90FD;
+}
+
+.btn:hover {
+  transform: translateY(3px);
+}
